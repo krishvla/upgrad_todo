@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upgrad Internship</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<style type="text/css">
+		#box1	{ 
+
+		float: left;
+
+	}
+	#box2 	{
+		float:right;
+		padding-right: 200px;
+	}
+
+
+		.box input[type = "text"],.box input[type = "password"], .box2 input[type="password"], .box2 input[type="text"], .box2 input[type="email"]{
+		  border:0;
+		  background: none;
+		  display: block;
+		  margin: 20px ;
+		  text-align: center;
+		  border: 3px solid #4facfe;
+		  padding: 15px 20px;
+		  width: 400px;
+		  outline: none;
+		  color: black;
+		  border-radius: 25px;
+		  transition: 0.25s;
+		  
+		}
+		.box input[type = "text"]:focus,.box input[type = "password"]:focus, box2 input[type="password"]:focus, .box2 input[type="text"]:focus, .box2 input[type="email"]:focus{
+		  width: 280px;
+		   -webkit-animation: 9s colorChange alternate;
+		  transition height 0.3s, width 0.3s 0.1s
+		  input:focus ~ .border
+		  
+		}
+
+		h1 {
+		    display: block;
+		    font-size: 2em;
+		    margin-block-start: 0.67em;
+		    margin-block-end: 0.67em;
+		    margin-inline-start: 0px;
+		    margin-inline-end: 0px;
+		    font-weight: bold;
+		}
+		
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><p style="color: rgba(103, 128, 159, 1)">Vamsi</p></a>
+    </div>
+  </div>
+</nav>
+<div id="box1">
+	<form class="box" method="post">
+	{% csrf_token %}
+	  <h1>Login</h1>
+	  <input type="text" name="user_id" placeholder="User-Id" required="required">
+	  <input type="password" name="password" placeholder="Password" required="required">
+	  <button class="btn btn-success" style="" name="alogin" value="submit">Login</button>
+	</form>
+</div>
+<div id="box2">
+	<form class="box2" method="post">
+	{% csrf_token %}
+	  <h1>Register</h1>
+	  <input type="text" name="firstname" placeholder="First Name" required="required">
+	  <input type="text" name="lastname" placeholder="LAst Name" required="required">
+	  <input type="text" name="username" placeholder="user_id" required="required">
+	  <input type="email" name="gmail" placeholder="Mail address" required="required">
+	  <input type="password" name="password" placeholder="Password" required="required">
+	  <button class="btn btn-success" style="" name="signup" value="submit">Register</button>
+	</form>
+</div>
+</body>
+</html>
