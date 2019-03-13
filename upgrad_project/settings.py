@@ -26,7 +26,7 @@ SECRET_KEY = '2250di-n0(qixn2)!n0wzytuz9g$ix##gnq265n&lk+u8jgc6u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['upgrad-intern.herokuapp.com']
 
 
 CELERY_BROKER_URL ='amqp://ffuxegfx:6eOAzMJPp7PvG5-gwQ34rb2KEMN1VeQx@fox.rmq.cloudamqp.com/ffuxegfx'
