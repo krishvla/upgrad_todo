@@ -86,13 +86,12 @@ WSGI_APPLICATION = 'upgrad_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'daq9hls6cco6et',
-        'USER': 'uxuodilegcmpae',
-        'PASSWORD' : 'b7059f739a7e6db64694151526350596b850e074578aa2dec2747c08cae1c61d',
-        'HOST' : 'ec2-107-20-177-161.compute-1.amazonaws.com',
+        'NAME': 'xxxxxxxxxxxxxxxxxxx',
+        'USER': 'xxxxxxxxxxxxxxx',
+        'PASSWORD' : 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        'HOST' : 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
         'PORT' : '5432',
-        'URL' : 'postgres://uxuodilegcmpae:b7059f739a7e6db64694151526350596b850e074578aa2dec2747c08cae1c61d@ec2-107-20-177-161.compute-1.amazonaws.com:5432/daq9hls6cco6et',
-
+        'URL' : 'xxxxxxxxxxxxxxxxxxx'
     }
 }
 
